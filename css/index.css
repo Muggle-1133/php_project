@@ -1,0 +1,112 @@
+/* Google Web Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+html,body {
+    font-family: 'Ubuntu', sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+    height: 100%;
+	font-size: 17px;
+	background-color:#f1f0f5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*------ section part -------*/
+section {
+    height: 100%;
+    background-color: rgb(5, 5, 77);
+    padding-top: 4px;
+}
+.title {
+    width: 100%;
+    height: 80px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+.title p {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 40px;
+    padding: 0 14px;
+    display: inline-block;
+    line-height: 72px;
+    text-align: center;
+    font-weight: bold;
+    color: #eee;
+}
+.title i {
+    font-size: 48px;
+    line-height: 73px;
+    color: #eee;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.container .state {
+    padding: 28px 62px 20px 62px;
+    background-color: rgba(190, 193, 241, 0.932);
+    border-radius: 15px;
+    margin-right: 17px;
+    transition: 0.1s;
+}
+.container .state:hover {
+    background-color:  rgb(155, 155, 236);
+}
+.state span {
+    display: block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    height: 50px;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(3, 3, 102);
+    margin-bottom: 10px;
+}
+.state img {
+    padding: 24px;
+    width: 230px;
+    height: 230px;
+}
+.container .apply {
+    padding: 28px 64px 20px 64px;
+    background-color: rgba(190, 193, 241, 0.932);
+    border-radius: 15px;
+    margin-left: 17px;
+    transition: 0.1s;
+}
+.container .apply:hover {
+    background-color:  rgb(155, 155, 236);
+}
+.apply span {
+    display: block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(3, 3, 102);
+    margin-bottom: 12px;
+}
+.apply img {
+    padding: 24px;
+    width: 230px;
+    height: 230px;
+}

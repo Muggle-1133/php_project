@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>소프트웨어컨텐츠 노트북 대여 사이트</title>
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Font Awesome 링크 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.dropdown-btn').mouseover(function(){
+                $('.dropdown-btn').css({"color":"#222"})
+            })
+            $('.dropdown-btn').click(function(){
+                $('.dropdown-submenu').toggle()
+            })
+        })
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://www.ync.ac.kr/kor/intro.do" target="_blank"><img src="img/logo.png">
+                </a>
+                <span class="logo-text">SOFTWARE & CONTETS</span>
+            </div>
+            <div class="btn">
+                <button class="home-btn">
+                    <a href="index.php">홈</a>
+                </button>
+                <button class="notice-btn">
+                    <a href="notice.php">노트북 대여 방침</a>
+                </button>
+                <!-- <button class="login-btn">
+                    <a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                    로그인</a>
+                </button> -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <div class="dropdown-submenu">
+                            <a href="#none1"><i class="fa fa-user" aria-hidden="true"></i>마이페이지</a>
+                            <a href="#none2"><i class="fa fa-list-ul" aria-hidden="true"></i>신청내역</a>
+                            <a href="#none3"><i class="fa fa-sign-out" aria-hidden="true"></i>로그아웃</a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="title">
+            <p>
+                노트북 대여 사이트
+            </p>
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="state">
+                <a href="rental_state.php">
+                    <span>노트북 대여 현황</span>
+                    <img src="img/web.png">
+                </a>
+            </div>
+            <div class="apply">
+                <a href="rental_apply.php">
+                    <span>노트북 대여 신청</span>
+                    <img src="img/submit.png">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
